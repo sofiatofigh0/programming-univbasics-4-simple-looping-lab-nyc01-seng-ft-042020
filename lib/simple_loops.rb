@@ -22,12 +22,12 @@ end
 end
 
 def return_string_array(array)
-  
-  stringArray = []
-   array.each do |i|
-    stringArray = stringArray + i.to_s
+  count = 0
+  while count < array.length do
+    array[count] = array[count].to_s
+    count += 1
   end
- return stringArray
+  array
 end
 
 # Write your methods here
